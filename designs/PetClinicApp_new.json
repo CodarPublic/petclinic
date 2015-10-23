@@ -1,0 +1,383 @@
+{
+  "@self" : "/csa/api/topology-model/topology/05ffd4da-7ead-4a3f-b40b-b4aaa93ef922",
+  "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+  "groupId" : "com.hp.csa",
+  "artifactId" : "8a8187d04df63946014df64392910177",
+  "version" : "1.50.00",
+  "displayName" : "Scalable Tomcat stack Microservice",
+  "description" : "A scalable Tomcat stack microservice which can be used to deploy partial PetClinic Application with scalable stack design",
+  "resources" : [ {
+    "id" : "Tomcat_Server_c2bc9714_19c3_488b_bdd0_37ee9544a21f_aade4fa90c4a4c8397d9a9bf4d141949__VERSION__1__GROUPID__com.hp.csa.type0001",
+    "name" : "Tomcat",
+    "component" : {
+      "@self" : "/csa/api/topology-model/component-type/1648af89-1380-4ef7-abeb-16f365b47d23",
+      "groupId" : "com.hp.csa.type",
+      "artifactId" : "Tomcat_Server_c2bc9714_19c3_488b_bdd0_37ee9544a21f_aade4fa90c4a4c8397d9a9bf4d141949",
+      "version" : "1"
+    },
+    "properties" : [ {
+      "propertyKey" : "configurationUrl",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "sshPort",
+      "propertyValue" : {
+        "value" : "22",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "installPath",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "appProtocol",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "_modifiable_properties",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "appPort",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "remoteFilePath",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "Result",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "hostname",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "password",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "serviceCommand",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "_enable_modify_during_lifecycle_properties",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "port",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "response",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "artifactPassword",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "artifactUrl",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "privatekeyPath",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "artifactUsername",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "username",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    } ],
+    "outgoingRelations" : [ {
+      "relationType" : "association",
+      "id" : "7dcea3a6-d7f0-9625-dd4e-94d29b1e03d5",
+      "properties" : [ {
+        "propertyKey" : "_enable_modify_during_lifecycle_properties",
+        "propertyValue" : {
+          "value" : null,
+          "type" : "string"
+        }
+      }, {
+        "propertyKey" : "_modifiable_properties",
+        "propertyValue" : {
+          "value" : null,
+          "type" : "string"
+        }
+      }, {
+        "propertyKey" : "_relation_type",
+        "propertyValue" : {
+          "value" : {
+            "first" : "Association",
+            "second" : "ASSOCIATION"
+          },
+          "type" : "pair"
+        }
+      } ],
+      "relationDescriptorName" : "installsOn_Tomcat_Server_c2bc9714_19c3_488b_bdd0_37ee9544a21f_aade4fa90c4a4c8397d9a9bf4d141949",
+      "resourceReference" : {
+        "name" : "Application Server"
+      }
+    } ],
+    "annotations" : {
+      "uniqueName" : "Tomcat0001",
+      "displayName" : "Tomcat",
+      "x" : "440",
+      "description" : "\n      ",
+      "y" : "84"
+    },
+    "capabilityChars" : [ ],
+    "requirements" : [ ]
+  }, {
+    "id" : "126dd3d1-2edf-5818-7735-cf029fa77cb5",
+    "name" : "Application Server",
+    "component" : {
+      "@self" : "/csa/api/topology-model/component-type/a72c3a1f-bd1e-41d9-aa76-663ff60d3467",
+      "groupId" : "com.hp.csa.type",
+      "artifactId" : "VcenterServerType",
+      "version" : "15.07.0000"
+    },
+    "properties" : [ {
+      "propertyKey" : "customizationSpec",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "vmResourcePool",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "vmID",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "ipAddress",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "hostSystem",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "vmNamePrefix",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "ipAddressList",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "result",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "privateKey",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string_encrypted"
+      }
+    }, {
+      "propertyKey" : "hostname",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "macAddress",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "password",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string_encrypted"
+      }
+    }, {
+      "propertyKey" : "memorySize",
+      "propertyValue" : {
+        "value" : "512",
+        "type" : "number"
+      }
+    }, {
+      "propertyKey" : "vmFolder",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "clusterName",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "vmTemplateReference",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "dataStore",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "vmState",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "cpuCount",
+      "propertyValue" : {
+        "value" : "2",
+        "type" : "number"
+      }
+    }, {
+      "propertyKey" : "username",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    } ],
+    "outgoingRelations" : [ ],
+    "annotations" : {
+      "uniqueName" : "ApplicationServe0001",
+      "displayName" : "Application Server",
+      "x" : "440",
+      "description" : "vCenter Server",
+      "y" : "254"
+    },
+    "capabilityChars" : [ ],
+    "requirements" : [ ]
+  }, {
+    "id" : "25c1e78e-4bc3-4b68-a4f4-ff228d73c111",
+    "name" : "Application Tier",
+    "component" : {
+      "@self" : "/csa/api/topology-model/component-type/17d33e15-0885-412e-acdf-c8472467114b",
+      "groupId" : "com.hp.csa.type.scalingGroup",
+      "artifactId" : "ScalingGroupType_25c1e78e-4bc3-4b68-a4f4-ff228d73c111",
+      "version" : "1"
+    },
+    "properties" : [ {
+      "propertyKey" : "instanceCount",
+      "propertyValue" : {
+        "value" : "1",
+        "type" : "number"
+      }
+    } ],
+    "outgoingRelations" : [ {
+      "relationType" : "aggregation",
+      "id" : "1b3fb346-0d64-4185-884d-f3bd8c25f0f1",
+      "properties" : [ ],
+      "resourceReference" : {
+        "name" : "Tomcat"
+      }
+    }, {
+      "relationType" : "aggregation",
+      "id" : "69be4f09-2194-41da-adfc-707c268afaf6",
+      "properties" : [ ],
+      "resourceReference" : {
+        "name" : "Application Server"
+      }
+    } ],
+    "annotations" : {
+      "uniqueName" : "ApplicationTier0001",
+      "color" : "#7bd148",
+      "iconUrl" : "/csa/api/blobstore/Server_management_RGB_blue_NT.png?tag=library"
+    },
+    "capabilityChars" : [ ],
+    "requirements" : [ ]
+  } ],
+  "revision" : 30,
+  "properties" : [ {
+    "propertyKey" : "metamodelId",
+    "propertyValue" : {
+      "value" : "test",
+      "type" : "string"
+    }
+  }, {
+    "propertyKey" : "is_express",
+    "propertyValue" : {
+      "value" : "false",
+      "type" : "boolean"
+    }
+  } ],
+  "iconUrl" : "/csa/images/library/tomcat.png",
+  "tagIds" : [ {
+    "@self" : "/csa/api/tag/0c8ae53917c14e8f98a11e45eef386e0"
+  }, {
+    "@self" : "/csa/api/tag/775566f589944c489c7caaaf91ce3e8d"
+  }, {
+    "@self" : "/csa/api/tag/d22c213f7e644d1d8362b2830b2c93a9"
+  }, {
+    "@self" : "/csa/api/tag/ede6b70286454f929d9566b8016f282e"
+  } ],
+  "state" : "UNLOCKED",
+  "hidden" : false,
+  "partial" : false,
+  "profiles" : [ ],
+  "annotations" : {
+    "serviceBlueprintId" : "8a8187d04df63946014df643932e017a",
+    "providerType" : "independent"
+  }
+}
