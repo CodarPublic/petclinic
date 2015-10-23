@@ -2,12 +2,6 @@
 === Spring PetClinic Sample Application
 ==========================================================================
 
-@author Ken Krebs
-@author Juergen Hoeller
-@author Rob Harrop
-@author Costin Leau
-@author Sam Brannen
-@author Scott Andrews
 
 ==========================================================================
 === Data Access Strategies
